@@ -1,4 +1,4 @@
-CREATE TABLE foods (
+CREATE TABLE tb_cardapio(
 	id SERIAL PRIMARY KEY,
 	title TEXT NOT NULL,
 	price INTEGER NOT NULL,

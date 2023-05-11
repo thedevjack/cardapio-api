@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.api</groupId>
-	<artifactId>cardapio</artifactId>
+	<artifactId>cardapio-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cardapio</name>
 	<description>Cardapio Digital</description>
@@ -50,6 +50,7 @@
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
+
 		</dependency>
 	</dependencies>
 
