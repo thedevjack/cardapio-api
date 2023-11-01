@@ -1,4 +1,6 @@
-package com.api.cardapio.food;
+package com.api.cardapio.DTO;
+
+import com.api.cardapio.Model.Food;
 
 public record FoodResponseDTO(Long id, String title, String image, Integer price) {
 

@@ -1,9 +1,9 @@
 package com.api.cardapio.Controller;
 
-import com.api.cardapio.food.Food;
-import com.api.cardapio.food.FoodRepository;
-import com.api.cardapio.food.FoodRequestDTO;
-import com.api.cardapio.food.FoodResponseDTO;
+import com.api.cardapio.Model.Food;
+import com.api.cardapio.Repository.FoodRepository;
+import com.api.cardapio.DTO.FoodRequestDTO;
+import com.api.cardapio.DTO.FoodResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
