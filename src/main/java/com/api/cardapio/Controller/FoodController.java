@@ -1,31 +1,30 @@
-package com.api.cardapio.controller;
+package com.api.cardapio.Controller;
 
-
-
-import com.api.cardapio.model.Food;
-import com.api.cardapio.model.dto.FoodRequestDTO;
-import com.api.cardapio.model.dto.FoodResponseDTO;
-import com.api.cardapio.repository.FoodRepository;
-import lombok.RequiredArgsConstructor;
+import com.api.cardapio.food.Food;
+import com.api.cardapio.food.FoodRepository;
+import com.api.cardapio.food.FoodRequestDTO;
+import com.api.cardapio.food.FoodResponseDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
-@RequestMapping("/cardapio")
+@RequestMapping("cardapio")
 public class FoodController {
 
+    @Autowired
+    private FoodRepository repository;
 
-    private final FoodRepository repository;
-
-    @PostMapping("/create")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @PostMapping
     public void saveFood(@RequestBody FoodRequestDTO data){
         Food foodData = new Food(data);
         repository.save(foodData);
         return;
     }
 
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping
     public List<FoodResponseDTO> getAll(){
 
