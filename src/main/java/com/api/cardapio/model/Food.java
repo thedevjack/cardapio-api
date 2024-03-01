@@ -38,5 +38,10 @@ public class Food {
         this.imagem = data.imagem();
     }
 
+    public Food(String titulo, String descricao, String imagem) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.imagem = imagem;
+    }
 }
 
